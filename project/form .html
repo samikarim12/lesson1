@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    
+</head>
+<style>
+  
+  footer {
+  background-color: #ffffff;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.social-icons {
+  font-size: 24px;
+  margin: 0 10px;
+  color: white;
+}
+   
+.logo-img {
+    width: 100px; 
+    height: auto;
+    margin-right: 20px; 
+    padding: 1px;
+}
+</style>
+   
+
+<body>
+  
+  <nav class="navbar navbar-expand-lg bg-dark">
+    <div class="container-fluid">
+        <img src="https://ideogram.ai/api/images/direct/hS_YWIz-Q2iPkrBT9Y7Rwg.jpg" alt="Simplon's Beauty Care Logo "  style="border-radius: 50%;"   class="logo-img">
+      
+        <a class="navbar-brand text-white" href="#" style="color: black;font-weight:700; font-size: 25px;">Simplon's Beauty Care</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent text-white">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item" style="margin-left: 280px;">
+                    <a class="nav-link active text-white" aria-current="page" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active text-white" href="about us (3).html">About us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active text-white" href="contactus.html">Contact us</a>
+                </li>   <li class="nav-item">
+
+                    <a class="nav-link active text-white" href="product.html">Product</a>
+                </li>                    
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" style="color: white;" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-6 col-sm-12 xs-col-12 m">
+                <h2>Place Order</h2 >
+
+                
+                <form>
+                    <div class="form-group">
+                        <label for="Products Name"  class="mt-2">Item-name:</label>
+                        <input type="text" class="form-control" id="Item-name" placeholder="enter product name" >
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="Products Name" class="mt-2">Quantity:</label>
+                        <input type="text" class="form-control" id="Quantity" placeholder="enter Quantity" >
+
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="Products Name" class="mt-2">Customer-name:</label>
+                        <input type="text" class="form-control" id="Customer-name" placeholder="enter Customer-name" >
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="Products Name" class="mt-2">Phonenumber:</label>
+                        <input type="text" class="form-control" id="Phonenumber" placeholder="enter Phonenumber" >
+
+                    </div>
+                    <div class="form-group">
+                        <label for="Products Name" class="mt-2">Address:</label>
+                        <input type="text" class="form-control" id="Address" placeholder="enter address" >
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="Products Name" class="mt-2">E-mail-Address:</label>
+                        <input type="text" class="form-control" id="E-mail-Address" placeholder="enter E-mail Address" >
+
+
+                    </div>
+                    <a class="btn btn-primary"
+                   >PLACE ORDER</a>
+                    
+                   
+
+                </form>
+                
+
+ 
+ 
+
+
+            </div>
+
+    <div class="col-md-6">
+        <h2>Order Summary</h2>
+        
+        <ul class="list-group">
+          <li class="list-group-item">Item-name: <span id="summaryItem-name"></span></li>
+          <li class="list-group-item">Quantity: <span id="summaryQuantity"></span></li>
+          <li class="list-group-item">Customer-name: <span id="summaryCustomer-name"></span></li>
+          <li class="list-group-item">Phonenumber: <span id="summaryPhonenumber"></span></li>
+          <li class="list-group-item">Address: <span id="summaryAddress"></span></li>
+          <li class="list-group-item">E-mail-Address: <span id="summaryE-mail-Address"></span></li>
+          
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+  <script>
+   
+    $(document).ready(function(){
+        
+  
+$('#Item-name').on('input', function(){
+    $('#summaryItem-name').text($(this).val());
+  });
+
+  $('#Quantity').on('input', function(){
+    $('#summaryQuantity').text($(this).val());
+  });
+     
+      
+    });
+  </script>
+  <script>
+   
+    $(document).ready(function(){
+        
+  
+$('#Customer-name').on('input', function(){
+    $('#summaryCustomer-name').text($(this).val());
+  });
+
+  $('#Phonenumber').on('input', function(){
+    $('#summaryPhonenumber').text($(this).val());
+  });
+     
+      
+    });
+  </script>
+  <script>
+   
+    $(document).ready(function(){
+        
+$('#Address').on('input', function(){
+    $('#summaryAddress').text($(this).val());
+  });
+
+  $('#E-mail-Address').on('input', function(){
+    $('#summaryE-mail-Address').text($(this).val());
+  });
+     
+      
+    });    
+  </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+
+    <footer class="footer mt-5" style="height:100%; width: 100%;">
+       
+        <div class="card-footer bg-black">
+            <div class="card-footer h3 border-bottom border-bitoon">SIMPLONS BEAUTY CARE
+            </div>
+            <div class="row border-bottom text-white">
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                    <h4 class="strong">Disclaimer</h4>
+                    <p>At SIMPLONS BEAUTY CARE, we strive to provide the highest quality skincare and makeup products. However, individual results may vary due to factors such as skin type, lifestyle, and usage. We recommend consulting with our expert team for personalized recommendations and guidance. Please discontinue use if any adverse reactions occur.</p>
+                   </div>
+                   <div class="col-sm-4 col-md-4 col-lg-4">
+                    <h4 class="">Privacy Notice</h4>
+                    <p>At SIMPLONS BEAUTY CARE, we prioritize the privacy and confidentiality of our customers' personal information. We will not share, sell, or disclose any data collected during your visit to our store or website without your explicit consent, except as required by law. We take all necessary measures to protect your data and ensure its safekeeping.</p>
+                   </div>
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                    <h4 class="">About</h4>
+                    <p>At SIMPLONS BEAUTY CARE, we value your feedback and suggestions to help us improve our products and services continually. If you have any comments or concerns, please do not hesitate to reach out to us via email or phone, and we will respond promptly to address your inquiry in a timely and efficient manner within 5 business days. Thank you for choosing SIMPLONS BEAUTY CARE.</p>
+                </div>
+            </div><br>
+                <div class="row bg-pr text-white">
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                        <h5>@Copyrights Simplons Beauty Care All Rights Reserved</h5>
+                      </div> 
+                      <div class="col-md-12">
+                        <a href="#" class="social-icons" style="color: white;"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-icons" style="color: white;"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icons" style="color: white;"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icons" style="color: white;"><i class="fab fa-linkedin"></i></a>
+                      </div>             
+                </div>
+            </div>
+          
+      </footer>
+    
+      
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+    
+</body>
+</html>
